@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
+                <!-- Page Title -->
+                <h1 class="text-center mb-4">Tương tác DOM bằng JS</h1>
+
+                <!-- Card 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text" id="text1">Đoạn văn thứ nhất: Đây là một ví dụ về đoạn văn trong HTML. Nội dung có thể bao gồm các văn bản, liên kết, và nhiều loại phần tử khác.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text" id="text2">Đoạn văn thứ hai: HTML là ngôn ngữ đánh dấu để tạo trang web. Nó cung cấp cấu trúc cho nội dung web và được sử dụng cùng với CSS và JavaScript để xây dựng các trang web phức tạp.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text" id="text3">Đoạn văn thứ ba: Bạn có thể kết hợp các đoạn văn này với các yếu tố khác như hình ảnh, liên kết hoặc bảng để tạo ra các trang web phong phú và đa dạng hơn.</p>
+                    </div>
+                </div>
+
+                <!-- Buttons and Inputs -->
+                <div class="text-center">
+                    <button class="btn btn-primary mb-3" onclick="changeTextColor()">Thay đổi màu chữ</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="bgColorInput">Nhập màu nền:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="bgColorInput" class="form-control" placeholder="Nhập màu (vd: red, #ff0000)">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" onclick="applyBgColor()">Đổi màu nền</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fontSizeInput">Nhập kích thước font (px):</label>
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control" id="fontSizeInput" placeholder="Nhập kích thước font">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" onclick="changeFontSize()">Đổi kích thước font</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-danger" onclick="copyContent('text1', 'text2')">Copy nội dung từ đoạn 1 đến đoạn 2</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
