@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Đơn Giản</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="calculator card p-4">
+            <input type="text" id="display" class="form-control mb-3" disabled>
+            <div class="row">
+                <div class="col-3 py-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">C</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('7')">7</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('8')">8</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('9')">9</button></div>
+                <div class="col-3 py-3"><button class="btn btn-info w-100" onclick="square()">x²</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('4')">4</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('5')">5</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('6')">6</button></div>
+                <div class="col-3 py-3"><button class="btn btn-info w-100" onclick="sqrt()">√</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('1')">1</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('2')">2</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('3')">3</button></div>
+                <div class="col-3 py-3"><button class="btn btn-success w-100" onclick="calculate()">=</button></div>
+                <div class="col-3 py-3"><button class="btn btn-secondary w-100" onclick="appendToDisplay('0')">0</button></div>
+                <div class="col-3 py-3"><button class="btn btn-warning w-100" onclick="appendToDisplay('+')">+</button></div>
+                <div class="col-3 py-3"><button class="btn btn-warning w-100" onclick="appendToDisplay('-')">-</button></div>
+                <div class="col-3 py-3"><button class="btn btn-warning w-100" onclick="appendToDisplay('/')">/</button></div>
+                <div class="col-3 py-3"><button class="btn btn-warning w-100" onclick="appendToDisplay('*')">*</button></div>
+         
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
